@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="236.0" prefWidth="355.0" spacing="20.0" style="-fx-background-color: rgba(0, 0, 0, 0.8); " xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.saksham4106.stopwatch.MainController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+        <Label fx:id="hourTimer" contentDisplay="BOTTOM" text="00" textFill="WHITE">
+            <font>
+                <Font name="DejaVuMathTeXGyre-Regular" size="57.0" />
+            </font>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+            <HBox.margin>
+                <Insets right="10.0" />
+            </HBox.margin>
+        </Label>
+        <Label fx:id="minuteTimer" text="00" textFill="WHITE">
+            <font>
+                <Font name="DejaVuMathTeXGyre-Regular" size="57.0" />
+            </font>
+            <HBox.margin>
+                <Insets right="10.0" />
+            </HBox.margin>
+        </Label>
+        <Label fx:id="secondTimer" text="00" textFill="WHITE">
+            <font>
+                <Font name="DejaVuMathTeXGyre-Regular" size="57.0" />
+            </font>
+        </Label>
+        <Label fx:id="millisecondTimer" text=".00" textFill="WHITE">
+            <font>
+                <Font name="DejaVuMathTeXGyre-Regular" size="27.0" />
+            </font>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+                <Insets top="25.0" />
+            </HBox.margin>
+        </Label>
+
+    </HBox>
+    <Button fx:id="startButton" onAction="#onStartButtonClick" prefHeight="55.0" prefWidth="58.0">
+        <graphic>
+            <ImageView blendMode="EXCLUSION" fitHeight="65.0" fitWidth="58.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@bitmap.png" />
+                </image>
+            </ImageView>
+        </graphic>
+        <VBox.margin>
+            <Insets bottom="10.0" />
+        </VBox.margin></Button>
+</VBox>

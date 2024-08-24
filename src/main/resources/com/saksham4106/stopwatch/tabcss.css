@@ -1,0 +1,17 @@
+.tab-header-background {
+    -fx-background-color: rgba(0.4, 0.4, 0.4, 0.8);
+}
+
+.tab{
+    -fx-background-color: black;
+    -fx-pref-height: 35;
+}
+
+.tab-label{
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+}
+
+.text-field{
+    -fx-text-fill: white;
+}
